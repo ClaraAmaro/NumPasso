@@ -1,0 +1,356 @@
+.banner{
+    background-color: var(--primary-light);
+    padding: 5vh 0;
+}
+
+.banner-container{
+    width: 90%;
+    max-width: 75rem; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    flex-wrap: wrap; /* quebra linha no responsivo */
+}
+
+.banner-text{
+    flex: 1; /* ocupa o espaço todo no flexbox*/
+}
+
+.banner-text h1{
+    font-size: 3rem;
+    line-height: 1.2; /* espaço entre as linhas */
+    color: var(--black);
+}
+
+.banner-text span{
+    color: var(--primary) !important; 
+}
+
+.banner-text p{
+    margin-top: 1rem;
+    max-width: 28rem; /* impede linha muito longa */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.btn-banner{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 1.8rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0.6rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-banner:hover{
+    opacity: 0.85;
+}
+
+.banner-images{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    
+}
+
+.img-phone{
+    width: 18rem;
+    margin: 0 -3rem -2.3rem 0;
+}
+
+.img-girl{
+    width: 18rem;
+    margin: 0 0 -3rem 0;
+}
+
+.sobre-discalculia{
+    padding: 8vh 0;
+}
+
+.sobre-container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.sobre-container h2{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.sobre-subtitulo{
+    margin-top: 1rem;
+    color: #666;
+}
+
+.cards-discalculia{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* repete colunas automaticamente, 
+                                                                grid tenta encaixar quantas colunas couberem
+                                                                minimo = 16rem, max = dividir espaço igualmente
+                                                                deixa responsivo automaticamente */
+    gap: 2rem;
+}
+
+.card-info{
+    border: 0.08rem solid var(--black-15);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+}
+
+.card-icon{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    flex-shrink: 0; /* icone nunca vai encolher */
+}
+
+.card-icon ion-icon{
+    font-size: 1.4rem;
+}
+
+.card-info h3{
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.card-info p{
+    margin-top: 0.5rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.titulo-sessao{
+    margin-top: 5rem;
+}
+
+.funcao-app{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+}
+
+.funcao-card{
+    border: 0.08rem solid var(--black-15);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    text-align: left;
+}
+
+.funcao-card ion-icon{
+    font-size: 2rem;
+    color: var(--secundary);
+}
+
+.funcao-card h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.funcao-card p{
+    margin-top: 0.7rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.tipos-discalculia{
+    padding: 8vh 0;
+}
+
+.tipos-discalculia h2{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.tipos-discalculia .sobre-subtitulo{
+    text-align: center;
+    width: 90%;
+    max-width: 75rem;
+    margin: 1rem auto 0;
+}
+
+.tipos-discalculia .cards-discalculia{
+    width: 90%;
+    max-width: 75rem;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.niveis{
+    padding: 8vh 0;
+}
+
+.niveis h2{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.niveis .sobre-subtitulo{
+    text-align: center;
+    width: 90%;
+    max-width: 75rem;
+    margin: 1rem auto 0;
+}
+
+.niveis .funcao-app{
+    width: 90%;
+    max-width: 75rem;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.diagnostico{
+    padding: 8vh 0;
+}
+
+.tratamento{
+    padding: 8vh 0;
+}
+
+.numeros{
+    padding: 8vh 0;
+}
+
+.numeros .funcao-card h2{
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.fonte{
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.diferenciais{
+    padding: 8vh 0;
+}
+
+.tabela-diferenciais{
+    width: 100%;
+    margin-top: 4rem;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 0.08rem solid var(--black-15);
+}
+
+.tabela-diferenciais th{
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.tabela-diferenciais td{
+    padding: 1rem;
+    border-top: 0.08rem solid var(--black-15);
+    text-align: center;
+    color: #666;
+}
+
+.tabela-diferenciais td:first-child{
+    text-align: left;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.tabela-diferenciais tbody tr:nth-child(even){
+    background: #fafafa;
+}
+
+.tabela-diferenciais tbody tr:hover{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.accessibilidade-box{
+    margin-top: 5rem;
+    border: 0.08rem solid var(--secundary);
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.accessibilidade-box ion-icon{
+    font-size: 2.5rem;
+    color: var(--secundary);
+}
+
+.accessibilidade-box h3{
+    color: var(--secundary);
+}
+
+.accessibilidade-box p{
+    margin-top: 0.5rem;
+    color: #444;
+}
+
+@media (max-width: 768px){
+
+    .banner-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text p{
+        margin: 1rem auto 0;
+    }
+
+    .banner-images{
+        justify-content: center;
+    }
+
+    .banner-text h1{
+        font-size: 2.2rem;
+    }
+
+    .accessibilidade-box{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px){
+    .tipos-discalculia .cards-discalculia{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .tipos-discalculia .cards-discalculia{
+        grid-template-columns: 1fr;
+    }
+}

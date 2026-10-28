@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;  /* a caixa respeita o tamanho definido (width e height) */
+}
+
+:root {
+  --primary: #409C17;
+  --primary-light: #eef3e7;
+  --secundary: #9acb7b;
+
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --black-15: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%; /* nunca pode ultrapassar o tamanho do elemento pai */
+  display: block; /* remove espaços invisiveis e comportamentos estranhos */
+}

@@ -1,0 +1,259 @@
+.contato-topo{
+    background-color: var(--primary-light);
+    padding: 5vh 0;
+}
+
+.contato-topo-container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.contato-texto{
+    flex: 1;
+}
+
+.tag-contato{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #cfe7b9;
+    color: var(--primary);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contato-texto h1{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.contato-texto h1 span{
+    color: var(--primary);
+}
+
+.contato-texto p{
+    margin-top: 1rem;
+    max-width: 32rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.contato-imagem img{
+    width: 20rem;
+}
+
+.contato{
+    padding: 6vh 0;
+}
+
+.contato-container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.contato-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-card{
+    border: 0.08rem solid var(--black-15);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.icone{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #dff0cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone ion-icon{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.info-card h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.info-card p{
+    margin-top: 0.7rem;
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.info-card span{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.formulario-box{
+    border: 0.08rem solid var(--black-15);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.formulario-box h2{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.formulario-box p{
+    margin-top: 0.5rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+.duplo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.campo label{
+    margin-bottom: 0.5rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.campo input,
+.campo select,
+.campo textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 0.08rem solid var(--black-15);
+    border-radius: 0.7rem;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.campo textarea{
+    height: 10rem;
+    resize: none;
+}
+
+.formulario-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.seguro{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.seguro ion-icon{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.seguro small{
+    display: block;
+    color: #777;
+}
+
+.formulario-rodape button{
+    border: none;
+    padding: 1rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.formulario-rodape button:hover{
+    opacity: 0.9;
+}
+
+.acessibilidade-box{
+    border: 0.08rem solid var(--secundary);
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acessibilidade-box ion-icon{
+    font-size: 5rem;
+    color: var(--primary);
+}
+
+.acessibilidade-box h3{
+    color: var(--primary);
+}
+
+.acessibilidade-box p{
+    margin-top: 0.5rem;
+    color: #444;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px){
+
+    .contato-container{
+        grid-template-columns: 1fr;
+    }
+
+    .duplo{
+        grid-template-columns: 1fr;
+    }
+
+    .contato-topo-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contato-texto p{
+        margin: 1rem auto 0;
+    }
+
+    .formulario-rodape{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

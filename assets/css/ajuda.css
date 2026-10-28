@@ -1,0 +1,132 @@
+.ajuda{
+    background-color: var(--primary-light);
+    padding: 5vh 0;
+}
+
+.ajuda-topo{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    flex-wrap: wrap;
+}
+
+.ajuda-texto{
+    flex: 1;
+}
+
+.tag{
+    display: inline-block;
+    background-color: #cfe7b9;
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.ajuda-texto h2{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--black);
+}
+
+.ajuda-texto p{
+    margin-top: 1rem;
+    max-width: 32rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.ajuda-imagem img{
+    width: 22rem;
+    height: auto;
+}
+
+.recursos{
+    padding: 8vh 0;
+}
+
+.recursos-container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.titulo-secao{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.cards-recursos{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+}
+
+.card-recurso{
+    border: 0.08rem solid var(--black-15);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-recurso:hover{
+    transform: translateY(-0.3rem);
+}
+
+.icone{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--secundary);
+}
+
+.icone ion-icon{
+    font-size: 1.5rem;
+}
+
+.card-recurso h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.card-recurso p{
+    margin-top: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px){
+
+    .ajuda-topo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ajuda-texto p{
+        margin: 1rem auto 0;
+    }
+
+    .ajuda-imagem img{
+        width: 18rem;
+    }
+
+    .ajuda-texto h2{
+        font-size: 2rem;
+    }
+}
