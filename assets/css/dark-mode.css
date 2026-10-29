@@ -1,0 +1,341 @@
+/* Tema escuro do NumPasso: cores consistentes em todas as páginas */
+:root {
+    --theme-bg: #ffffff;
+    --theme-surface: #ffffff;
+    --theme-surface-soft: #eef3e7;
+    --theme-text: #202820;
+    --theme-muted: #5c665a;
+    --theme-border: #dfe7d6;
+    --theme-input: #ffffff;
+    --theme-shadow: rgba(30, 50, 25, .10);
+}
+
+body.dark-mode {
+    color-scheme: dark;
+    --white: #202820;
+    --black: #edf3e9;
+    --primary: #a5d889;
+    --primary-light: #29362a;
+    --secundary: #789e64;
+    --black-15: rgba(0, 0, 0, .28);
+    --bg: #202820;
+    --text: #edf3e9;
+    --theme-bg: #171e18;
+    --theme-surface: #202820;
+    --theme-surface-soft: #29362a;
+    --theme-text: #edf3e9;
+    --theme-muted: #bdc9b9;
+    --theme-border: #3a4939;
+    --theme-input: #222c23;
+    --theme-shadow: rgba(0, 0, 0, .25);
+    background: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
+}
+
+body.dark-mode,
+body.dark-mode main,
+body.dark-mode footer,
+body.dark-mode .header,
+body.dark-mode .footer,
+body.dark-mode .footer-container {
+    background-color: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
+}
+
+body.dark-mode section,
+body.dark-mode article,
+body.dark-mode .card,
+body.dark-mode .card-blog,
+body.dark-mode .blog-card,
+body.dark-mode .artigo,
+body.dark-mode .conteudo,
+body.dark-mode .content,
+body.dark-mode .comentarios,
+body.dark-mode .formulario,
+body.dark-mode .form-container,
+body.dark-mode .caixa,
+body.dark-mode .box,
+body.dark-mode .info-card,
+body.dark-mode .faq-item,
+body.dark-mode .tipo-card,
+body.dark-mode .nivel-card,
+body.dark-mode .container-card,
+body.dark-mode .comment-box,
+body.dark-mode .form-contato,
+body.dark-mode .contato-form,
+body.dark-mode .post-card,
+body.dark-mode .blog-item {
+    background-color: var(--theme-surface) !important;
+    color: var(--theme-text) !important;
+    border-color: var(--theme-border) !important;
+    box-shadow: 0 8px 24px var(--theme-shadow);
+}
+
+body.dark-mode .hero,
+body.dark-mode .banner,
+body.dark-mode .secao,
+body.dark-mode .section,
+body.dark-mode .destaque,
+body.dark-mode .beneficios,
+body.dark-mode .sobre,
+body.dark-mode .tipos,
+body.dark-mode .diagnostico,
+body.dark-mode .tratamento,
+body.dark-mode .estatisticas,
+body.dark-mode .comentarios-section {
+    background-color: var(--theme-surface-soft) !important;
+    color: var(--theme-text) !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode strong,
+body.dark-mode small,
+body.dark-mode legend,
+body.dark-mode figcaption {
+    color: var(--theme-text);
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .descricao,
+body.dark-mode .subtitulo,
+body.dark-mode .texto-secundario {
+    color: var(--theme-muted);
+}
+
+body.dark-mode a {
+    color: #bce5a3;
+}
+body.dark-mode a:hover { color: #d3f4bd; }
+body.dark-mode .nav a { color: var(--theme-text) !important; }
+body.dark-mode .nav a.active,
+body.dark-mode .nav a:hover { color: var(--primary) !important; }
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: var(--theme-input) !important;
+    color: var(--theme-text) !important;
+    border: 1px solid var(--theme-border) !important;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder { color: #aab8a5 !important; }
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td { border-color: var(--theme-border) !important; }
+body.dark-mode th { background: var(--theme-surface-soft) !important; color: var(--theme-text) !important; }
+body.dark-mode hr { border-color: var(--theme-border) !important; }
+
+/* Mantém imagens transparentes e evita blocos brancos adicionados pelo CSS. */
+body.dark-mode img { background-color: transparent !important; }
+body.dark-mode .logo img { mix-blend-mode: screen; }
+
+.btn-theme {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--theme-border);
+    border-radius: 50%;
+    background: var(--theme-surface);
+    color: var(--primary);
+    box-shadow: 0 3px 10px var(--theme-shadow);
+    transition: background .2s ease, transform .2s ease, border-color .2s ease;
+}
+.btn-theme:hover { transform: translateY(-1px); background: var(--theme-surface-soft); }
+.btn-theme .material-symbols-outlined { font-size: 24px; line-height: 1; }
+body.dark-mode .btn-theme {
+    background: #29362a;
+    color: #f3d783;
+    border-color: #4a6045;
+}
+
+@media (max-width: 900px) {
+    .header .container { flex-wrap: wrap; gap: 1rem; }
+    .btn-theme { width: 40px; height: 40px; flex-basis: 40px; }
+}
+
+
+/* Ajustes de contraste da tabela comparativa no modo noturno */
+body.dark-mode table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #202a35 !important;
+    color: #edf4fb !important;
+    overflow: hidden;
+    border-radius: 14px;
+}
+body.dark-mode table thead,
+body.dark-mode table thead tr,
+body.dark-mode table thead th {
+    background: #26394b !important;
+    color: #eaf3ff !important;
+}
+body.dark-mode table tbody,
+body.dark-mode table tbody tr,
+body.dark-mode table tbody td,
+body.dark-mode table tr,
+body.dark-mode table td {
+    background-color: #202a35 !important;
+    color: #e3ebf3 !important;
+    border-color: #3a4b5c !important;
+}
+body.dark-mode table tbody tr:nth-child(even),
+body.dark-mode table tbody tr:nth-child(even) td {
+    background-color: #263441 !important;
+}
+body.dark-mode table tbody tr:hover,
+body.dark-mode table tbody tr:hover td {
+    background-color: #30465a !important;
+}
+body.dark-mode table th,
+body.dark-mode table td {
+    padding: 16px 20px;
+}
+body.dark-mode table td:first-child {
+    color: #d8e9f8 !important;
+}
+body.dark-mode table td:not(:first-child) {
+    text-align: center;
+}
+
+/* Paleta azul-esverdeada para harmonizar com a identidade visual */
+body.dark-mode {
+    --primary: #8fc8f2;
+    --primary-light: #26394b;
+    --secundary: #6da8d6;
+    --theme-bg: #171f28;
+    --theme-surface: #202a35;
+    --theme-surface-soft: #263746;
+    --theme-text: #edf4fb;
+    --theme-muted: #bdccda;
+    --theme-border: #3a4b5c;
+    --theme-input: #202a35;
+}
+body.dark-mode,
+body.dark-mode main,
+body.dark-mode footer,
+body.dark-mode .header,
+body.dark-mode .footer,
+body.dark-mode .footer-container {
+    background-color: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
+}
+body.dark-mode section,
+body.dark-mode article,
+body.dark-mode .card,
+body.dark-mode .card-blog,
+body.dark-mode .blog-card,
+body.dark-mode .artigo,
+body.dark-mode .conteudo,
+body.dark-mode .content,
+body.dark-mode .comentarios,
+body.dark-mode .formulario,
+body.dark-mode .form-container,
+body.dark-mode .caixa,
+body.dark-mode .box,
+body.dark-mode .info-card,
+body.dark-mode .faq-item,
+body.dark-mode .tipo-card,
+body.dark-mode .nivel-card,
+body.dark-mode .container-card,
+body.dark-mode .comment-box,
+body.dark-mode .form-contato,
+body.dark-mode .contato-form,
+body.dark-mode .post-card,
+body.dark-mode .blog-item {
+    background-color: var(--theme-surface) !important;
+    color: var(--theme-text) !important;
+    border-color: var(--theme-border) !important;
+}
+body.dark-mode .hero,
+body.dark-mode .banner,
+body.dark-mode .secao,
+body.dark-mode .section,
+body.dark-mode .destaque,
+body.dark-mode .beneficios,
+body.dark-mode .sobre,
+body.dark-mode .tipos,
+body.dark-mode .diagnostico,
+body.dark-mode .tratamento,
+body.dark-mode .estatisticas,
+body.dark-mode .comentarios-section {
+    background-color: var(--theme-surface-soft) !important;
+    color: var(--theme-text) !important;
+}
+body.dark-mode a { color: #a8d8ff; }
+body.dark-mode a:hover { color: #d0eaff; }
+body.dark-mode .nav a.active,
+body.dark-mode .nav a:hover { color: #8fc8f2 !important; }
+body.dark-mode .btn-theme {
+    background: #26394b;
+    color: #f3d783;
+    border-color: #49657c;
+}
+
+/* Alternância equilibrada entre azul e verde no modo noturno */
+body.dark-mode {
+    --theme-bg: #18221d;
+    --theme-surface: #202d26;
+    --theme-surface-soft: #243a32;
+    --theme-blue: #243746;
+    --theme-blue-alt: #2b4250;
+    --theme-green: #20382c;
+    --theme-green-alt: #294536;
+    --theme-text: #edf4ee;
+    --theme-muted: #c1d0c5;
+    --theme-border: #40564a;
+}
+
+/* Na tabela, cada linha alterna entre verde e azul */
+body.dark-mode table thead,
+body.dark-mode table thead tr,
+body.dark-mode table thead th {
+    background-color: #29483b !important;
+    color: #f0f7f1 !important;
+    border-color: #456454 !important;
+}
+body.dark-mode table tbody tr,
+body.dark-mode table tbody tr:nth-child(odd),
+body.dark-mode table tbody tr:nth-child(odd) td {
+    background-color: var(--theme-green) !important;
+    color: var(--theme-text) !important;
+    border-color: var(--theme-border) !important;
+}
+body.dark-mode table tbody tr:nth-child(even),
+body.dark-mode table tbody tr:nth-child(even) td {
+    background-color: var(--theme-blue) !important;
+    color: var(--theme-text) !important;
+    border-color: var(--theme-border) !important;
+}
+body.dark-mode table tbody tr:hover,
+body.dark-mode table tbody tr:hover td {
+    background-color: #355344 !important;
+}
+body.dark-mode table td:first-child {
+    color: #e4f0e7 !important;
+}
+
+/* Alternância sutil entre blocos de conteúdo na mesma página */
+body.dark-mode main > section:nth-of-type(odd),
+body.dark-mode .conteudo > section:nth-of-type(odd),
+body.dark-mode .content > section:nth-of-type(odd) {
+    background-color: var(--theme-surface) !important;
+}
+body.dark-mode main > section:nth-of-type(even),
+body.dark-mode .conteudo > section:nth-of-type(even),
+body.dark-mode .content > section:nth-of-type(even) {
+    background-color: #20332b !important;
+}

@@ -6,6 +6,8 @@
 
     <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <script src="assets/js/dark-mode.js" defer></script>
 
     <!-- HEADER E FOOTER -->
     <link rel="stylesheet" href="assets/css/header.css">

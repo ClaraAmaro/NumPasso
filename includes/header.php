@@ -6,7 +6,7 @@
     <div class="container">
 
         <a href="index.php" class="logo">
-            <img src="assets/images/logo_LadoALado.png" alt="Logo">
+            <img src="/NumPasso/assets/images/logo_LadoALado.png" alt="Logo">
         </a>
 
         <nav class="nav">
@@ -28,6 +28,10 @@
             </a>
 
         </nav>
+
+        <button type="button" class="btn-theme" id="btn-theme" aria-label="Ativar modo noturno" aria-pressed="false" title="Modo noturno">
+            <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+        </button>
 
         <a href="#" class="btn-download">
 

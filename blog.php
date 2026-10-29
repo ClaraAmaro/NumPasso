@@ -41,7 +41,7 @@
 
         <div class="blog-container">
 
-            <div class="blog-posts">
+            <div class="blog-posts" id="lista-artigos">
 
                 <a href="artigo1.php" class="card-blog">
 
@@ -184,13 +184,16 @@
 
             <aside class="blog-lateral">
 
+
                 <div class="pesquisa">
-
-                    <input type="text" placeholder="Buscar artigos...">
-
+                    <input
+                        type="text"
+                        id="buscar-artigos"
+                        placeholder="Buscar artigos..."
+                        aria-label="Buscar artigos">
                     <ion-icon name="search-outline"></ion-icon>
-
                 </div>
+
 
                 <div class="categorias">
 
@@ -211,10 +214,10 @@
 
                     <h3> Sobre o aplicativo </h3>
 
-                    <p> 
-                        Este aplicativo foi desenvolvido para ajudar pessoas com discalculia a aprender matemática de forma mais simples, 
-                        acessível e interativa. Aqui você encontra informações sobre a discalculia, dicas de estudo, atividades práticas e 
-                        recursos educativos que auxiliam no desenvolvimento das habilidades matemáticas. Nosso objetivo é oferecer um ambiente 
+                    <p>
+                        Este aplicativo foi desenvolvido para ajudar pessoas com discalculia a aprender matemática de forma mais simples,
+                        acessível e interativa. Aqui você encontra informações sobre a discalculia, dicas de estudo, atividades práticas e
+                        recursos educativos que auxiliam no desenvolvimento das habilidades matemáticas. Nosso objetivo é oferecer um ambiente
                         de aprendizado acolhedor, onde cada pessoa possa evoluir no seu próprio ritmo, ganhando mais confiança e autonomia nos estudos.
                     </p>
 
@@ -252,6 +255,47 @@
 
     </section>
     <?php include('includes/footer.php'); ?>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const campoBusca = document.getElementById('buscar-artigos');
+            const artigos = document.querySelectorAll('.card-blog');
+
+            const mensagem = document.createElement('p');
+            mensagem.textContent = 'Nenhum artigo encontrado.';
+            mensagem.style.display = 'none';
+
+            document.getElementById('lista-artigos')?.appendChild(mensagem);
+
+            campoBusca.addEventListener('input', function() {
+                const busca = campoBusca.value
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '')
+                    .toLowerCase()
+                    .trim();
+
+                let encontrados = 0;
+
+                artigos.forEach(function(artigo) {
+                    const texto = artigo.innerText
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '')
+                        .toLowerCase();
+
+                    const corresponde = texto.includes(busca);
+
+                    artigo.style.display = corresponde ? '' : 'none';
+
+                    if (corresponde) {
+                        encontrados++;
+                    }
+                });
+
+                mensagem.style.display = encontrados === 0 ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>

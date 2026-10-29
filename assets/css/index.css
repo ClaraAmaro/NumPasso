@@ -53,7 +53,7 @@
 }
 
 .banner-images{
-    display: flex;
+    display: flex;      
     align-items: center;
     gap: 2vw;
     

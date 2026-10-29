@@ -2,7 +2,7 @@
     <div class="footer-container">
 
         <div class="footer-logo">
-            <img src="assets/images/logo_numPasso2.jpg" alt="Logo NumPasso">
+            <img src="/NumPasso/assets/images/logo_numPasso2.png" alt="Logo">
         </div>
 
         <div class="footer-text">
@@ -16,12 +16,12 @@
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
 
-                <a href="#">
+                <a href="https://www.instagram.com/numpassoo/" target="_blank" rel="noopener noreferrer" title="Instagram">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
 
-                <a href="#">
-                    <ion-icon name="chatbubble-outline"></ion-icon>
+                <a href="mailto:numpassotcc@gmail.com?subject=Contato%20-%20NumPasso">
+                    <ion-icon name="mail-outline"></ion-icon>
                 </a>
 
                 <a href="#">
